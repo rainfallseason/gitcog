@@ -1,0 +1,4 @@
+[plugins]
+# alias = module_name
+bird = gitcog_bird_plugin
+jool = gitcog_jool_plugin
