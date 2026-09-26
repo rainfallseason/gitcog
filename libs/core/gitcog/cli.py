@@ -9,6 +9,8 @@ def parser_init() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
                     prog="gitcog",
                     description="Generate config files from toml")
+    parser.add_argument("-l", "--load", metavar="PACKAGE", help="Load ", required=True)
+    parser.add_argument("--allow-unnoficial-package", action="store_true", help="You should NOT use this option") # これは--no-preserve-rootと同じ趣旨の安全策 これがなければERRORに投げて終了、あったらWARNINGで警告
     return parser
 
 def read_available_plugins() -> dict:
@@ -25,3 +27,5 @@ def main():
     logging.basicConfig(level="INFO", handlers=[RichHandler(rich_tracebacks=True)])
     parser = parser_init()
     parser.print_help()
+
+main()
