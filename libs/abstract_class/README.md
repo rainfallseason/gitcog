@@ -1,0 +1,1 @@
+# GitCog Abstract Class
