@@ -1,0 +1,14 @@
+[project]
+name = "gitcog-abstract"
+version = "0.1.0"
+description = "Abstract class for GitCog plugins"
+readme = "README.md"
+authors = [
+    { name = "Kotaro Usui", email = "111988437+rainfallseason@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
